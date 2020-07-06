@@ -7,8 +7,8 @@ import requests
 from urllib3.exceptions import InsecureRequestWarning
 
 # Temporary removed this import
-#requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
-# HI NATI
+# requests.packages.urllib3.disable_warnings(category=InsecureRequestWarning)
+
 # SSH configuration for IPAM server
 port = "22"
 ip = "10.213.17.21"
@@ -18,7 +18,7 @@ ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 ssh.connect(ip,port,username,password)
 
-# Hi NaTI
+# Hi Maor version2
 # API configuration for IPAM Netbox server
 
 url ='http://10.213.17.21/api/ipam/ip-addresses/?limit=200'
